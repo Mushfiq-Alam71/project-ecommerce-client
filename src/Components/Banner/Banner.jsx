@@ -1,5 +1,6 @@
 import bannerimg1 from "../../assets/imgs/banner img/banner-img-dimmed.svg";
 import bannerimg2 from "../../assets/imgs/banner img/banner-img.svg";
+import navLogoMini from '/src/assets/imgs/nav-bar-logo.svg';
 
 const Banner = () => {
    return (
@@ -15,7 +16,7 @@ const Banner = () => {
          </div>
 
          {/** img */}
-         <div className="relative left-88">
+         <div className="relative left-88 z-1">
             <div className="relative mt-12">
                {/* image 2 (above image 1) */}
                <div className="absolute bottom-0 left-96 w-[400px] overflow-hidden">
@@ -30,19 +31,37 @@ const Banner = () => {
          </div>
 
          {/** review */}
-         <div className="bg-[#FC8A06] py-4 px-8 absolute bottom-0 justify-end">
-            <div className="flex flex-col space-y-4">
-               <div className="bg-white text-black p-4 rounded-lg">
-                  <p className="font-semibold">Order</p>
-                  <p>Your order has been placed!</p>
+         <div className="bg-[#FC8A06] py-10 px-48 absolute bottom-0 right-0 rounded-tl-[196px] rounded-br-xl">
+            <div className="flex flex-col gap-8 ">
+               <div className="bg-white text-black p-6 rounded-lg relative right-24 flex flex-row justify-between gap-24">
+                  <div>
+                     <img src={navLogoMini} className="w-[55px]" alt="" />
+                     <p className="text-sm font-bold pt-2">Your order has been placed!</p>
+                     <p className="text-sm font-normal">Awaiting Restaurant acceptance</p>
+                  </div>
+                  <div>
+                     <p className="font-light text-sm">now</p>
+                  </div>
                </div>
-               <div className="bg-white text-black p-4 rounded-lg">
-                  <p className="font-semibold">Order</p>
-                  <p>Your order is on the way!</p>
+               <div className="bg-white text-black p-6 rounded-lg relative right-[-160px] flex flex-row justify-between gap-24">
+                  <div>
+                     <img src={navLogoMini} className="w-[55px]" alt="" />
+                     <p className="text-sm font-bold pt-2">Order Accepted!!</p>
+                     <p className="text-sm font-normal">Your order will be delivered shortly.</p>
+                  </div>
+                  <div>
+                     <p className="font-light text-sm">now</p>
+                  </div>
                </div>
-               <div className="bg-white text-black p-4 rounded-lg">
-                  <p className="font-semibold">Order</p>
-                  <p>Your rider's nearby - get ready!</p>
+               <div className="bg-white text-black p-6 rounded-lg relative right-12 flex flex-row justify-between gap-24">
+                  <div>
+                     <img src={navLogoMini} className="w-[55px]" alt="" />
+                     <p className="text-sm font-bold pt-2">Your rider's nearby</p>
+                     <p className="text-sm font-normal">They're almost there - get ready!</p>
+                  </div>
+                  <div>
+                     <p className="font-light text-sm">now</p>
+                  </div>
                </div>
             </div>
          </div>
