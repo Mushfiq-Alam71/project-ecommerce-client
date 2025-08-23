@@ -18,12 +18,12 @@ const Banner = () => {
          {/** img */}
          <div className="relative left-88 z-1">
             <div className="relative mt-12">
-               {/* image 2 (above image 1) */}
+               {/* image 2 (above image) */}
                <div className="absolute bottom-0 left-96 w-[400px] overflow-hidden">
                   <img src={bannerimg2} className="w-full" alt="" />
                </div>
 
-               {/* image 1 */}
+               {/* image 1 (less opacity bottom image) */}
                <div className="w-[705px]">
                   <img src={bannerimg1} className="w-full" alt="" />
                </div>
