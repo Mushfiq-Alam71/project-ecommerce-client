@@ -55,7 +55,7 @@ const PopularCategory = () => {
    ]
 
    return (
-      <section className='mt-12'>
+      <div className='mt-12'>
          <h2 className="text-3xl font-bold my-8">Order<span className='text-[#fc8a06]'>.uk</span> Popular Categories</h2>
          <div className='grid grid-cols-6 justify-items-center gap-16'>
             {popularItemsData.map((item, index) => (
@@ -67,7 +67,7 @@ const PopularCategory = () => {
                />
             ))}
          </div>
-      </section>
+      </div>
    );
 };
 
